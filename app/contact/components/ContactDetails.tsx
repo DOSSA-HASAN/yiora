@@ -27,7 +27,7 @@ export default function ContactDetails() {
                     </div>
                     <div>
                         <h4 className="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-0.5">Email Us</h4>
-                        <p className="font-headline-md text-headline-md text-primary">hello@yiora.com</p>
+                        <p className="font-headline-md text-headline-md text-primary">yiora.co.tz@gmail.com</p>
                     </div>
                 </div>
 
@@ -38,7 +38,7 @@ export default function ContactDetails() {
                     <div>
                         <h4 className="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-0.5">Global Presence</h4>
                         <p className="font-body-md text-body-md text-on-surface-variant">
-                            Nairobi Hub • London • Berlin Nomads
+                            Tanzania • Dar • Upanga
                         </p>
                     </div>
                 </div>

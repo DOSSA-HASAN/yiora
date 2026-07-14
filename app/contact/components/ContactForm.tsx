@@ -70,7 +70,7 @@ export default function ContactForm() {
                             type="tel"
                             id="user_phone"
                             name="user_phone"
-                            placeholder="+254 700 000000"
+                            placeholder="+255 600 000000"
                             className="w-full bg-white border border-outline/30 rounded-xl px-4 py-3 font-body-md text-on-surface focus:outline-none focus:border-primary transition-colors duration-200"
                         />
                     </div>
