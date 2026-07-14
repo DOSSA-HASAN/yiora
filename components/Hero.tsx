@@ -95,7 +95,7 @@ export default function HeroHeader() {
                         className="absolute top-0 left-0 w-48 h-64 rounded-lg overflow-hidden shadow-xl scrapbook-card z-20 cursor-pointer origin-center"
                     >
                         <Image
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWFHhTwXH6G7YHc6aXTUEUiAg5-AaTHsFsquANxfNg2OTw-7Hw9ILi0NNJ72rudvPsnh0J3mn-f3N543yxGNafVKXwfP4cnL0QO-0BBoYV5T1DfGkEZmdu3f8dj9qn4lwQ3wLolgXfaBV9sZD7aK_aGQFQMNmk6DrN3Fl93tcR1gRVxXtkFmbSbS3GrVfwq8DiquxPYccnqbkjph-TUZEsfxEdC_wS-fTaVBm1qo-nmOY9Ctj-doC7Dr5J_lw3eMfj8z0X8DOFOGw"
+                            src="/yiora-branding-18.png"
                             alt="A warm, candid photograph of two young women laughing heartily while sharing a picnic on a sunny afternoon."
                             fill
                             sizes="192px"

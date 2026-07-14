@@ -19,10 +19,10 @@ export default function ContactForm() {
         try {
             // Replace these strings with your actual EmailJS dashboard credentials
             await emailjs.sendForm(
-                "YOUR_SERVICE_ID",
-                "YOUR_TEMPLATE_ID",
+                process.env.NEXT_PUBLIC_SERVICE_ID!,
+                process.env.NEXT_PUBLIC_TEMPLATE_ID!,
                 formRef.current,
-                "YOUR_PUBLIC_KEY"
+                process.env.NEXT_PUBLIC_PUBLIC_KEY!
             );
 
             setStatus("success");

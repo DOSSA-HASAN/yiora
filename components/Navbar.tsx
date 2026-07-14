@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 interface NavLink {
     label: string;
@@ -16,7 +17,8 @@ export default function Navbar() {
     const pathname = usePathname();
 
     const navigationLinks: NavLink[] = [
-        { label: "Discover", href: "/experiences" }, // Maps to your catalog grid layout
+        { label: "Home", href: "/" },
+        { label: "Discover", href: "/experiences" },
         { label: "Our Community", href: "/community" },
         { label: "About", href: "/about" },
         { label: "Contact", href: "/contact" },
@@ -31,7 +33,13 @@ export default function Navbar() {
                     href="/"
                     className="font-display-lg text-headline-md text-secondary italic tracking-tighter hover:opacity-90 select-none"
                 >
-                    Y'IORA
+                    <Image
+                        src="/Asset 5-vectors.svg"
+                        alt="Brand Logo"
+                        width={120}
+                        height={50}
+                        priority
+                    />
                 </Link>
 
                 {/* Desktop Navigation Link Stack */}
