@@ -38,7 +38,7 @@ export default function ContactDetails() {
                     <div>
                         <h4 className="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-0.5">Global Presence</h4>
                         <p className="font-body-md text-body-md text-on-surface-variant">
-                            Tanzania • Dar • Upanga
+                            Tanzania • Dar es Salaam • Upanga
                         </p>
                     </div>
                 </div>
