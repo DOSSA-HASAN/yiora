@@ -18,8 +18,8 @@ export default function Navbar() {
 
     const navigationLinks: NavLink[] = [
         { label: "Home", href: "/" },
-        { label: "Discover", href: "/experiences" },
-        { label: "Our Community", href: "/community" },
+        // { label: "Discover", href: "/experiences" },
+        // { label: "Our Community", href: "/community" },
         { label: "About", href: "/about" },
         { label: "Contact", href: "/contact" },
     ];

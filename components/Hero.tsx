@@ -92,68 +92,20 @@ export default function HeroHeader() {
                         animate={{ opacity: 1, scale: 1, rotate: -6 }}
                         transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
                         whileHover={{ scale: 1.05, zIndex: 40, rotate: -2 }}
-                        className="absolute top-0 left-0 w-48 h-64 rounded-lg overflow-hidden shadow-xl scrapbook-card z-20 cursor-pointer origin-center"
+                        className="absolute top-0 left-0 w-100 md:w-150 h-100 rounded-lg overflow-hidden shadow-xl scrapbook-card z-20 cursor-pointer origin-center"
                     >
-                        <Image
-                            src="/yiora-branding-18.png"
-                            alt="A warm, candid photograph of two young women laughing heartily while sharing a picnic on a sunny afternoon."
-                            fill
-                            sizes="192px"
-                            className="object-cover select-none"
-                            priority
-                        />
-                    </motion.div>
-
-                    {/* Card 2 */}
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.8, rotate: 10 }}
-                        animate={{ opacity: 1, scale: 1, rotate: 3 }}
-                        transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-                        whileHover={{ scale: 1.05, zIndex: 40, rotate: 0 }}
-                        className="absolute top-12 right-0 w-64 h-80 rounded-lg overflow-hidden shadow-xl scrapbook-card z-10 cursor-pointer origin-center"
-                    >
-                        <Image
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxwmF4UBItiRi5IdYfUg5fthZkMtrQUwZtPwVSFoajX5oXzUdUuLaQ4r4hw4YwWqrteAQCIthV5sQt-au41sZYf20xeah0_FqYN283yOu8PfBjkaLg1s1ZsIpAe3By8VOtcuw67W9Ff1O9lMvB-Tl6pghbuf_fbyA965DhV1pnDzRtsbpFjwRECZNK4hB3uMI5hhNVziOwZb917nUA-dj5qwpsAx1B7xFxGdiFfEhCQ75gyDA-RjweZlHutut-am96JaQ0RFsCAjk"
-                            alt="A group of diverse women joyfully dancing together in a brightly lit, minimalist studio."
-                            fill
-                            sizes="256px"
-                            className="object-cover select-none"
-                            priority
-                        />
-                    </motion.div>
-
-                    {/* Card 3 */}
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
-                        animate={{ opacity: 1, scale: 1, rotate: 2 }}
-                        transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-                        whileHover={{ scale: 1.05, zIndex: 40, rotate: 5 }}
-                        className="absolute bottom-0 left-12 w-72 h-56 rounded-lg overflow-hidden shadow-xl scrapbook-card z-30 cursor-pointer origin-center"
-                    >
-                        <Image
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkeAdMH7EkYSkNfCcdl-bgQwh8uwVfIKmJXP58Si7MXuvaVUd-j-7MiH7TFmqWncwaCk8H8rKttsDP98-vRi8iVZVDI6Iaeqj8lwHuURZ30-TC5VUo0E158lXzWJR6nNJh15X3KHRcYdPpztSbc8mVUYUMqorNBLu5QHAjffN9a2xq5Lk5PpGGgRe9a7nFgjMwV_uL5CeLtVUfPK7UeJFLsZNgpwTMk3JQIV0KU5ZvMaH-cwP20jUzq6O6fxjOcYNxTwSb1g7qthg"
-                            alt="Close-up shot of hands painting on a canvas outdoors, surrounded by vibrant wildflowers."
-                            fill
-                            sizes="288px"
-                            className="object-cover select-none"
-                        />
-                    </motion.div>
-
-                    {/* Card 4 */}
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.8, rotate: -20 }}
-                        animate={{ opacity: 1, scale: 1, rotate: -12 }}
-                        transition={{ duration: 0.8, delay: 0.7, ease: "easeOut" }}
-                        whileHover={{ scale: 1.05, zIndex: 40, rotate: -5 }}
-                        className="absolute -bottom-8 right-8 w-40 h-48 rounded-lg overflow-hidden shadow-xl scrapbook-card z-20 cursor-pointer origin-center"
-                    >
-                        <Image
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfVnmOwuZHlkk2FqZ3YtIJTc7CEaK3Ejk41unbT9xZJz3lGclyGi5eOftZjcMV478BisnjRuDUuj9MPbgxn1hqhvLB-Zkkd0fIomxzATiBiCXIcCJ5qvWHcOus1bqxTKnIX6uWkfJEDLH8L5HnsT47zxbcbVjvencbCCf6EQOlCDnXLqwXSyrxH3GY2SIF8-OVf5746QeXdGNQX2I7_evhynZJnkIPcILyrGysl6XlGmj2y8C1Ucm0z0euqOmhnlJ1edz_ajj3w7M"
-                            alt="A woman in a sun-drenched cafe looking thoughtfully at her journal."
-                            fill
-                            sizes="160px"
-                            className="object-cover select-none"
-                        />
+                        <div style={{ backgroundImage: "url(/Asset-10-vectors.svg);" }} className='flex justify-center items-center h-full w-full bg-center bg-no-repeat'>
+                            <Image
+                                src="/yiora-branding-18.png"
+                                alt="A warm, candid photograph of two young women laughing heartily while sharing a picnic on a sunny afternoon."
+                                // fill
+                                width={500}
+                                height={500}
+                                // sizes="50px"
+                                className="w-auto h-full object-cover select-none"
+                                priority
+                            />
+                        </div>
                     </motion.div>
 
                     {/* Floating Doodles */}

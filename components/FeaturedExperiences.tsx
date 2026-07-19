@@ -99,60 +99,33 @@ export default function FeaturedExperiences() {
                     </motion.div>
                 </div>
 
-                {/* Cards Grid Container */}
-                <motion.div
-                    variants={gridVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, margin: "-100px" }}
-                    className="grid grid-cols-1 md:grid-cols-3 gap-8"
-                >
-                    {experiences.map((exp) => (
-                        <motion.div
-                            key={exp.id}
-                            variants={cardVariants}
-                            whileHover={{ y: -8 }}
-                            className="group bg-surface-container-lowest rounded-lg overflow-hidden scrapbook-card cursor-pointer shadow-sm transition-shadow duration-300 hover:shadow-md"
-                        >
-                            {/* Media Block Wrapper */}
-                            <div className="h-64 overflow-hidden relative">
-                                <Image
-                                    src={exp.imgUrl}
-                                    alt={exp.alt}
-                                    fill
-                                    sizes="(max-width: 768px) 100vw, 33vw"
-                                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                                />
-                                <div className={`absolute top-4 left-4 text-white px-4 py-1 rounded-full text-label-md font-bold ${exp.badgeBg}`}>
-                                    {exp.category}
-                                </div>
-                            </div>
-
-                            {/* Text Description Container */}
-                            <div className="p-8">
-                                <h3 className="font-headline-md text-on-surface mb-2 transition-colors duration-200 group-hover:text-primary">
-                                    {exp.title}
-                                </h3>
-                                <p className="text-on-surface-variant font-body-md mb-6 line-clamp-2">
-                                    {exp.description}
-                                </p>
-
-                                {/* Meta Detail Footer Row */}
-                                <div className="flex items-center justify-between border-t border-surface-variant pt-4">
-                                    <div className="flex items-center gap-2 text-on-surface-variant">
-                                        <span className="material-symbols-outlined text-secondary text-[20px]">
-                                            calendar_today
-                                        </span>
-                                        <span className="text-label-md">{exp.date}</span>
-                                    </div>
-                                    <span className="font-bold text-secondary relative overflow-hidden group-hover:text-primary transition-colors duration-300">
-                                        Join Now
-                                    </span>
-                                </div>
-                            </div>
-                        </motion.div>
-                    ))}
-                </motion.div>
+                <div className='flex flex-col justify-center items-center w-full relative'>
+                    <Image
+                        src={"/Asset 2-vectors.svg"}
+                        alt=''
+                        width={500}
+                        height={500}
+                        priority
+                        className='object-cover w-full md:w-[50%]'
+                    />
+                    <Image
+                        src={"/yiora-branding-19.png"}
+                        alt=''
+                        width={500}
+                        height={500}
+                        priority
+                        className='object-cover w-full md:w-[50%]'
+                    />
+                    <motion.h2
+                        initial={{ opacity: 0, y: -20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: "-100px" }}
+                        transition={{ duration: 0.6 }}
+                        className="absolute top-[70%] font-display-sm  shadow-md rounded-md text-center p-3 text-white bg-secondary  mb-12 italic font-bold"
+                    >
+                        We are officially at the starting line! While our events calendar is empty right now, we are busy crafting unforgettable experiences that will be worth the wait. Don't go anywhere—keep an eye on this space, because we’re about to drop something great.s
+                    </motion.h2>
+                </div>
             </div>
         </section>
     );

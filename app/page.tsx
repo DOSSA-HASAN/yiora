@@ -15,9 +15,9 @@ export default function Home() {
         <Hero />
         <ConnectionSection />
         <FeaturedExperiences />
-        <FindYourVibe />
-        <UpcomingTimeline />
-        <CandidMoments />
+        {/* <FindYourVibe /> */}
+        {/* <UpcomingTimeline /> */}
+        {/* <CandidMoments /> */}
         <CommunityVoices />
         <JoinTheMagic />
       </main>

@@ -58,13 +58,13 @@ export default function JoinTheMagic() {
 
                     {/* Action Row Links */}
                     <div className="flex flex-wrap justify-center gap-4">
-                        <motion.button
+                        {/* <motion.button
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.98 }}
                             className="bg-surface-container-lowest text-primary px-10 py-4 rounded-full font-label-md hover:bg-secondary-fixed transition-colors duration-200 shadow-md"
                         >
                             Join Community
-                        </motion.button>
+                        </motion.button> */}
                         <motion.button
                             whileHover={{ scale: 1.05, backgroundColor: "rgba(255, 255, 255, 0.1)" }}
                             whileTap={{ scale: 0.98 }}
